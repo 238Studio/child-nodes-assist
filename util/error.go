@@ -1,7 +1,6 @@
 package util
 
 //进行错误处理
-
 import (
 	"errors"
 	"runtime"

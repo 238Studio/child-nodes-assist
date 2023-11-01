@@ -5,7 +5,7 @@ import (
 	"log"
 	"testing"
 
-	util "github.com/UniversalRobotDriveTeam/child-nodes-util"
+	"github.com/UniversalRobotDriveTeam/child-nodes-util/util"
 )
 
 func TestNewError(t *testing.T) {
