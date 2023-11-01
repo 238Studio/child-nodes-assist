@@ -1,4 +1,4 @@
-package github.com/UniversalRobotDriveTeam/child-nodes-util
+package util
 
 //进行错误处理
 
@@ -23,6 +23,11 @@ type CustomError struct {
 // 传入：错误等级 错误类型 错误信息
 // 传出：CustomError
 func NewError(errorLevel int, errorType int, isNeedSpecialHandle bool, err error) *CustomError {
+	//检验err是否为空。如为空，返回nil。
+	if err == nil {
+		return nil
+	}
+
 	// 获取堆栈信息
 	stack := getStackTrace()
 	return &CustomError{
