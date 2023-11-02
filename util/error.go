@@ -15,19 +15,22 @@ type CustomError struct {
 	Stack        string //调用堆栈
 
 	CreatedAt int64 `gorm:"autoUpdateTime:milli"` //创建时间
+
+	IsNeedSpecialHandel bool //是否需要特殊处理
 }
 
 // NewError 创建一个新的 CustomError。
 // 传入：错误等级 错误类型 错误信息
 // 传出：CustomError
-func NewError(errorLevel int, errorType int, err error) *CustomError {
+func NewError(errorLevel int, errorType int, isNeedSpecialHandel bool, err error) *CustomError {
 	// 获取堆栈信息
 	stack := getStackTrace()
 	return &CustomError{
-		ErrorLevel:   errorLevel,
-		ErrorType:    errorType,
-		ErrorMessage: err.Error(),
-		Stack:        stack,
+		ErrorLevel:          errorLevel,
+		ErrorType:           errorType,
+		IsNeedSpecialHandel: isNeedSpecialHandel,
+		ErrorMessage:        err.Error(),
+		Stack:               stack,
 	}
 }
 
@@ -101,4 +104,15 @@ func ExtractErrorLevel(err error) int {
 		return customErr.ErrorLevel
 	}
 	return -1
+}
+
+// ExtractIsNeedSpecialHandel 从错误消息中提取是否需要特殊处理。
+// 传入：错误信息
+// 传出：是否需要特殊处理
+func ExtractIsNeedSpecialHandel(err error) bool {
+	var customErr *CustomError
+	if errors.As(err, &customErr) {
+		return customErr.IsNeedSpecialHandel
+	}
+	return false
 }
