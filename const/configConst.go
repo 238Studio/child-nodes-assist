@@ -17,6 +17,7 @@ const (
 	RemoteDatabaseName   = "RemoteDatabaseName"
 	SerialBaud           = "SerialBaud"
 	SerialReadTimeOutMil = "SerialReadTimeOutMil"
+	SerialSendCacheLength= "SerialSendCacheLength"
 	NativeCallURL        = "NativeCallURL"
 	HTTPParams           = "HTTPParams"
 	HTTPUrl              = "HTTPUrl"
