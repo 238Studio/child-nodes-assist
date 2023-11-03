@@ -35,11 +35,10 @@ const (
 
 	NoDeviceError             // 不存在下位机错误
 	DeviceNoTargetModuleError // 指向下位机的功能模块不存在错误
+	PortNotConnectedError     // COM口没有连接错误
+	FailedToSendToDevice      // 发送讯息给下位机失败错误
+	FailedToFlushPort         //刷新串口失败错误
+	FailedToSendToDeviceError // 发送讯息给下位机失败错误
 
-	PortNotConnectedError // COM口没有连接错误
-
-	FailedToSendToDevice // 发送讯息给下位机失败错误
-	FailedToFlushPort    //刷新串口失败错误
-
-	FailedToSendToDeviceError
+	NilPointer // 空指针错误
 )

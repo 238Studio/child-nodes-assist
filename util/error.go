@@ -5,6 +5,8 @@ package util
 import (
 	"errors"
 	"runtime"
+
+	_const "github.com/UniversalRobotDriveTeam/child-nodes-assist/const"
 )
 
 // CustomError 是自定义的错误类型，包括错误消息和堆栈信息。
@@ -23,6 +25,11 @@ type CustomError struct {
 // 传入：错误等级 错误类型 错误信息
 // 传出：CustomError
 func NewError(errorLevel int, errorType int, isNeedSpecialHandel bool, err error) *CustomError {
+	// 判断错误是否是nil
+	if err == nil {
+		//这是明显的程序设计失误。递归调用一次，获取调用栈。
+		return NewError(_const.FatalException, _const.NilPointer, false, errors.New("错误信息不能为nil"))
+	}
 	// 获取堆栈信息
 	stack := getStackTrace()
 	return &CustomError{
