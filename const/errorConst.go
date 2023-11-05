@@ -20,3 +20,9 @@ const (
 	Reality         //现实描述
 	Visual          //视觉
 )
+
+// 串口错误
+const  (
+	FailedToSendToDeviceError =iota
+	PortNotConnectedError
+)
