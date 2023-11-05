@@ -26,3 +26,8 @@ const  (
 	FailedToSendToDeviceError =iota
 	PortNotConnectedError
 )
+
+// websocket错误
+const (
+	MapKeyNotExistError =iota
+)
