@@ -31,3 +31,13 @@ const  (
 const (
 	MapKeyNotExistError =iota
 )
+
+// 配置错误
+const(
+	CreateConfigTableError =iota
+	DeleteConfigTableError
+	ConfigModuleNotExist
+	ReadConfigError
+	WriteConfigError
+	
+)
