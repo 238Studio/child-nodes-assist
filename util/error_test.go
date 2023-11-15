@@ -4,8 +4,8 @@ import (
 	"errors"
 	"testing"
 
-	_const "github.com/UniversalRobotDriveTeam/child-nodes-assist/const"
-	"github.com/UniversalRobotDriveTeam/child-nodes-assist/util"
+	_const "github.com/238Studio/child-nodes-assist/const"
+	"github.com/238Studio/child-nodes-assist/util"
 )
 
 func TestError(t *testing.T) {
