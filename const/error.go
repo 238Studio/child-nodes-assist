@@ -20,24 +20,3 @@ const (
 	Reality         //现实描述
 	Visual          //视觉
 )
-
-// 串口错误
-const  (
-	FailedToSendToDeviceError =iota
-	PortNotConnectedError
-)
-
-// websocket错误
-const (
-	MapKeyNotExistError =iota
-)
-
-// 配置错误
-const(
-	CreateConfigTableError =iota
-	DeleteConfigTableError
-	ConfigModuleNotExist
-	ReadConfigError
-	WriteConfigError
-	
-)
