@@ -19,5 +19,5 @@ const (
 	Task            //任务表
 	Reality         //现实描述
 	Visual          //视觉
-	HexPackage      //二进制包
+	Bin             //二进制包
 )
