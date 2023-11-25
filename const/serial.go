@@ -15,7 +15,10 @@ const (
 
 // 特殊数据报
 const (
-	FailedToRev = "FailedToRev"
+	// FailedToRev 接收失败
+	FailedToRev uint32 = 0xf0
+	// ReceiveSuccess 接收成功
+	ReceiveSuccess
 )
 
 // 特殊子节点模块
