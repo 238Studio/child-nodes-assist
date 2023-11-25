@@ -18,7 +18,7 @@ const (
 	// FailedToRev 接收失败
 	FailedToRev uint32 = 0xf0
 	// ReceiveSuccess 接收成功
-	ReceiveSuccess
+	ReceiveSuccess uint32 = 0xf1
 )
 
 // 特殊子节点模块
