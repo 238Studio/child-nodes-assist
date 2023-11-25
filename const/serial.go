@@ -2,8 +2,8 @@ package _const
 
 // 数据报常数
 const (
-	PortHead   uint32 = 0xEF
-	PortEnd    uint32 = 0xFF
+	PortHead   byte   = 0xEF
+	PortEnd    byte   = 0xFF
 	PortMaxLen uint32 = 0xFFFF
 )
 
