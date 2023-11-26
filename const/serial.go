@@ -17,8 +17,12 @@ const (
 const (
 	// FailedToRev 接收失败
 	FailedToRev uint32 = 0xf0
-	// ReceiveSuccess 接收成功
-	ReceiveSuccess
+	// SuccessRev 接收成功
+	SuccessRev uint32 = 0xf1
+	// ReadyResend 预备重发
+	ReadyResend uint32 = 0xf2
+	// CancelResend 取消重发
+	CancelResend uint32 = 0xf3
 )
 
 // 特殊子节点模块
