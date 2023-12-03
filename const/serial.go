@@ -16,13 +16,13 @@ const (
 // 特殊数据报
 const (
 	// FailedToRev 接收失败
-	FailedToRev uint32 = 0xf0
+	FailedToRev byte = 0
 	// SuccessRev 接收成功
-	SuccessRev uint32 = 0xf1
+	SuccessRev byte = 1
 	// ReadyResend 预备重发
-	ReadyResend uint32 = 0xf2
+	ReadyResend byte = 2
 	// CancelResend 取消重发
-	CancelResend uint32 = 0xf3
+	CancelResend byte = 3
 )
 
 // 特殊子节点模块
