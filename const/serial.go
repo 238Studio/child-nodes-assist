@@ -25,9 +25,6 @@ const (
 	InitData string = "InitData"
 	// ReSendData 重新发送的数据
 	ReSendData string = "ReSendData"
-)
-
-// 特殊子节点模块
-const (
-	SerialVerify uint32 = 0x0F
+	// WrongOddVariation 错误的校验
+	WrongOddVariation string = "WrongOddVariation"
 )
