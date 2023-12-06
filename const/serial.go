@@ -11,6 +11,8 @@ const (
 	SensorModule uint32 = 0x01
 	ReportModule uint32 = 0x02
 	ErrorModule  uint32 = 0x03
+	FeedBackModule uint32 = 0x0f
+	
 )
 
 // 特殊数据报
