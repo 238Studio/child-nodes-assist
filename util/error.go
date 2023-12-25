@@ -27,8 +27,8 @@ type CustomError struct {
 func NewError(errorLevel int, errorModule int, err error) *CustomError {
 	// 判断错误是否是nil
 	if err == nil {
-		//这是明显的程序设计失误。递归调用一次，获取调用栈。
-		return NewError(_const.FatalException, _const.Assist, errors.New("错误信息不能为nil"))
+		//错误为空时直接返回空值
+		return nil
 	}
 
 	// 判断错误等级是否大于致命错误
