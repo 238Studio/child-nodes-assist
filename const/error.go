@@ -16,8 +16,6 @@ const (
 	Database        // 数据库
 	Network         // 网络
 	Device          // 下位机
-	Task            //任务表
-	Reality         //现实描述
-	Visual          //视觉
-	Bin             //二进制包
+	File            //文件
+	Script          // 脚本
 )
