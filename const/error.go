@@ -17,4 +17,5 @@ const (
 	Network         // 网络
 	Device          // 下位机
 	File            //文件
+	Script          // 脚本
 )
