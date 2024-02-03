@@ -4,6 +4,6 @@ package arch
 
 // 核心地址
 var (
-	coreRootUrl string //核心根地址
-	coreID      string //子结点对应核心ID
+	CoreRootUrl string //核心根地址
+	CoreID      string //子结点对应核心ID
 )
