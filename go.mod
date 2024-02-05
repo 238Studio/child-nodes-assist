@@ -1,6 +1,6 @@
 module github.com/238Studio/child-nodes-assist
 
-go 1.21.1
+go 1.21.3
 
 require (
 	github.com/json-iterator/go v1.1.12 // indirect
